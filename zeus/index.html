@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    <!-- Tells router how to compose urls-->
+    <base href="/">
+
+    <title>Synergy Indicata | Program: AV/Aviation</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- Load styles and fonts (MDL and Kendo) -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="src/main/resources/library/kendo/styles/kendo.common.min.css" >
+    <link rel="stylesheet" href="src/main/resources/library/kendo/styles/kendo.custom.css" >
+
+    <!-- Load material design lite -->
+    <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="node_modules/material-design-lite/dist/material.light_green-indigo.min.css" />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="src/main/resources/styles/styles.css">
+
+    <!-- Load development libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <!-- IE-specific shim is included in angular 2 packages -->
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+
+    <!-- Load Kendo scripts-->
+    <script src="src/main/resources/library/kendo/js/jquery.min.js"></script>
+    <script src="src/main/resources/library/kendo/js/angular.min.js"></script>
+    <script src="src/main/resources/library/kendo/js/kendo.all.min.js"></script>
+    <script src="src/main/resources/library/kendo/js/console.js"></script>
+    <script src="src/main/resources/library/kendo/js/kendo.custom.js"></script>
+
+    <!-- Material Design Lite scripts -->
+    <script src="node_modules/material-design-lite/material.js"></script>
+
+    <!-- Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                src: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                },
+                AbstractGenerator :{
+                    format: 'register',
+                    defaultExtension: 'js'
+                },
+                GeneratorImpl : {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('/src/main/resources/ts/bootstrap').then(null, console.error.bind(console));
+    </script>
+
+</head>
+
+<!-- Display the application -->
+<body>
+<app></app>
+</body>
+
+</html>

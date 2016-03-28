@@ -1,0 +1,10 @@
+/.idea
+/node_modules
+/typings
+/.gradle
+/build
+/gradle
+/*.iml
+/gradlew.bat
+/gradlew
+/out

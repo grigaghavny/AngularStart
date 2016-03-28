@@ -1,0 +1,360 @@
+<div class="form-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="form-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+    <h1 class="mdl-layout-title">Project: PRJ/000001</h1>
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+      <button class="mdl-button mdl-js-button form-button-sec-rmargin mdl-button--raised  mdl-js-ripple-effect"> Cancel </button>
+      <button class="mdl-button mdl-js-button form-button-prim-rmargin mdl-button--raised mdl-button--colored mdl-js-ripple-effect"  id="collapsebutton"> Save </button>
+      <button class="mdl-button mdl-js-button button form-button-prim-rmargin mdl-button--raised mdl-button--colored mdl-js-ripple-effect"> Save & Close </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn"> <i class="material-icons">more_vert</i> </button>
+      <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+        <li class="mdl-menu__item">About</li>
+        <li class="mdl-menu__item">Contact</li>
+      </ul>
+    </div>
+
+        <!-- Header Validation -->
+    <div class="form-header-validations">
+      <ul id="panelbar">
+        <li> <span class="form-error-msg"><span class="k-icon k-warning"> </span> There are 2 errors on this page</span>
+          <ul>
+            <li ><a href="#error1" class="form-error-msg-link"><strong class="form-error-label">1.1</strong>  Title</a></li>
+            <li><a href="#error2" class="form-error-msg-link"><strong class="form-error-label">1.5</strong>  Start Date</a></li>
+          </ul>
+        </li>
+      </ul>
+
+            <!--<script>-->
+                <!--$(document).ready(function() {-->
+                    <!--$("#panelbar").kendoPanelBar({-->
+                        <!--expandMode: "multiple"-->
+                    <!--});-->
+                <!--});-->
+            <!--</script>-->
+        </div>
+        <!-- Header Validation -->
+
+    </header>
+  <div class="form-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="form-drawer-header"> <img src="src/main/resources/images/indicata.png" >
+      <div class="form-avatar-dropdown"> <span>Synergy Administrator</span>
+                <div class="mdl-layout-spacer"></div>
+                <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"> <i class="material-icons" role="presentation">arrow_drop_down</i> <span class="visuallyhidden">Accounts</span> </button>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+                    <li class="mdl-menu__item">My Profile</li>
+                    <li class="mdl-menu__item">Logout</li>
+                </ul>
+            </div>
+        </header>
+    <nav class="form-navigation mdl-navigation mdl-color--blue-grey-800"> <a class="mdl-navigation__link mdl-navigation-selected" href="">1. Details</a> <a class="mdl-navigation__link " href="">2. Organizations and Contacts</a> <a class="mdl-navigation__link" href="">3. Financial Information</a> <a class="mdl-navigation__link " href="">4. Notes and Attachements</a>
+      <div class="mdl-layout-spacer"></div>
+      <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a> </nav>
+  </div>
+  <main class="mdl-layout__content mdl-color--grey-100" >
+    <div class="mdl-grid form-content">
+      <div class="mdl-cell mdl-cell--12-col"> <em>Last modified by Synergy Administrator on 06/08/2015, 20:00</em> </div>
+      <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+        
+          <h3 class="form-section-title"><a name="error1"></a><span class="form-section-number">1.1</span> Title <span class="form-asterix">*</span></h3>
+          <div class="form-section-padding">
+            <input type="text" id="fullname"  name="fullname" class="k-textbox form-required form-error-field"  style="width: 100%;" />
+            <div class="form-error-msg">This field is required.</div>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col">
+          <h3 class="form-section-title" ><span class="tform-section-number">1.2</span> Description </h3>
+          <div class="form-section-padding">
+            <textarea  id="description" name="description" class="k-textbox mdl-textbox"   style="width: 100%;"></textarea>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+          <h3 class="form-section-title" ><span class="form-section-number">1.3</span> Project Code</h3>
+          <div class="form-section-padding">
+            <input type="text" id="fullname" name="fullname" class="k-textbox form-max-width-full" style="width:300px;margin-bottom:5px;" />
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+          <h3 class="form-section-title"><span class="form-section-number">1.4</span> Implementation Status</h3>
+          <div class="form-section-padding">
+            <select id="size1" placeholder="Select size..." class="form-max-width-full" style="width:250px;">
+              <option>Approved-Awaiting Funding</option>
+              <option>Approved-Awaiting Funding</option>
+              <option>Approved-Awaiting Funding</option>
+              <option>Approved-Awaiting Funding</option>
+            </select>
+          </div>
+                    <!--<script>-->
+                        <!--$(document).ready(function() {-->
+                            <!--// create ComboBox from input HTML element-->
+                            <!--$("#size1").kendoComboBox({-->
+                                <!--dataTextField: "text",-->
+                                <!--dataValueField: "value",-->
+                                <!--dataSource: [-->
+                                    <!--{ text: "Cotton", value: "1" },-->
+                                    <!--{ text: "Polyester", value: "2" },-->
+                                    <!--{ text: "Cotton/Polyester", value: "3" },-->
+                                    <!--{ text: "Rib Knit", value: "4" }-->
+                                <!--],-->
+                                <!--filter: "contains",-->
+                                <!--suggest: true,-->
+                                <!--index: 3-->
+                            <!--});-->
+
+                            <!--// create ComboBox from select HTML element-->
+                            <!--$("#size1").kendoComboBox();-->
+
+                        <!--});-->
+                    <!--</script>-->
+                </div>
+        <div class="mdl-cell mdl-cell--12-col">
+          <h3 class="form-section-title"><span class="form-section-number">1.5</span> Schedule</h3>
+          <div class="mdl-grid form-section-padding">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+              <label for="required" class="mdl-label">Approval Date</label>
+              <br/>
+              <input id="datepicker1" value="10/10/2011" />
+                            <!--<script>-->
+                                <!--$(document).ready(function() {-->
+                                    <!--// create DatePicker from input HTML element-->
+                                    <!--$("#datepicker1").kendoDatePicker();-->
+
+                                    <!--$("#monthpicker1").kendoDatePicker({-->
+                                        <!--// defines the start view-->
+                                        <!--start: "year",-->
+
+                                        <!--// defines when the calendar should return date-->
+                                        <!--depth: "year",-->
+
+                                        <!--// display month and year in the input-->
+                                        <!--format: "MMMM yyyy"-->
+                                    <!--});-->
+
+
+                                <!--});-->
+                            <!--</script>-->
+            </div>
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+              <label for="required" class="mdl-label"><a name="error2"></a>Start Date <span class="form-asterix">*</span></label>
+              <br/>
+              <input id="datepicker2" value="10/10/2011" class="form-required  form-error-field"/>
+              <div class="form-error-msg">This field is required.</div>
+                            <!--<script>-->
+                                <!--$(document).ready(function() {-->
+                                    <!--// create DatePicker from input HTML element-->
+                                    <!--$("#datepicker2").kendoDatePicker();-->
+
+                                    <!--$("#monthpicker2").kendoDatePicker({-->
+                                        <!--// defines the start view-->
+                                        <!--start: "year",-->
+
+                                        <!--// defines when the calendar should return date-->
+                                        <!--depth: "year",-->
+
+                                        <!--// display month and year in the input-->
+                                        <!--format: "MMMM yyyy"-->
+                                    <!--});-->
+
+
+                                <!--});-->
+                            <!--</script>-->
+            </div>
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+              <label for="required" class="mdl-label">End Date <span class="form-asterix">*</span></label>
+              <br/>
+              <input id="datepicker3" value="10/10/2011" class="form-required"/>
+                            <!--<script>-->
+                                <!--$(document).ready(function() {-->
+                                    <!--// create DatePicker from input HTML element-->
+                                    <!--$("#datepicker3").kendoDatePicker();-->
+
+                                    <!--$("#monthpicker3").kendoDatePicker({-->
+                                        <!--// defines the start view-->
+                                        <!--start: "year",-->
+
+                                        <!--// defines when the calendar should return date-->
+                                        <!--depth: "year",-->
+
+                                        <!--// display month and year in the input-->
+                                        <!--format: "MMMM yyyy"-->
+                                    <!--});-->
+
+
+                                <!--});-->
+                            <!--</script>-->
+            </div>
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+              <label for="required" class="mdl-label">Duration</label>
+              <br/>
+              <input type="text" id="fullname" name="fullname" class="k-textbox form-duration-months" value="14"/>
+              Months
+              <input type="text" id="fullname" name="fullname" class="k-textbox form-duration-days"   value="30"/>
+              Days </div>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col">
+          <h3 class="form-section-title"><span class="form-section-number">1.6</span> Program <span class="form-asterix">*</span></h3>
+          <div class="form-section-padding">
+            <input id="program" style="width: 400px" class="form-required form-max-width-full"/>
+                        <!--<script>-->
+                            <!--$(document).ready(function() {-->
+                                <!--$("#program").kendoComboBox({-->
+                                    <!--placeholder: "Select program",-->
+                                    <!--dataTextField: "ProductName",-->
+                                    <!--dataValueField: "ProductID",-->
+                                    <!--filter: "contains",-->
+                                    <!--autoBind: false,-->
+                                    <!--minLength: 1,-->
+                                    <!--dataSource: {-->
+                                        <!--type: "odata",-->
+                                        <!--serverFiltering: true,-->
+                                        <!--transport: {-->
+                                            <!--read: {-->
+                                                <!--url: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products",-->
+                                            <!--}-->
+                                        <!--}-->
+                                    <!--}-->
+                                <!--});-->
+                            <!--});-->
+                        <!--</script>-->
+                    </div>
+                </div>
+        <div class="mdl-cell mdl-cell--12-col">
+          <h3 class="form-section-title"><span class="form-section-number">1.7</span> Thematic Markers</h3>
+          <div class="form-section-padding">
+                        <select id="multiselect-box" multiple="multiple" data-placeholder="Select attendees...">
+                            <option>Steven White</option>
+                            <option>Nancy King</option>
+                            <option>Nancy Davolio</option>
+                            <option>Robert Davolio</option>
+                            <option>Michael Leverling</option>
+                            <option>Andrew Callahan</option>
+                            <option>Michael Suyama</option>
+                            <option selected>Anne King</option>
+                            <option>Laura Peacock</option>
+                            <option>Robert Fuller</option>
+                            <option>Janet White</option>
+                            <option>Nancy Leverling</option>
+                            <option>Robert Buchanan</option>
+                            <option>Margaret Buchanan</option>
+                            <option selected>Andrew Fuller</option>
+                            <option>Anne Davolio</option>
+                            <option>Andrew Suyama</option>
+                            <option>Nige Buchanan</option>
+                            <option>Laura Fuller</option>
+                        </select>
+                    </div>
+                    <!--<script>-->
+                        <!--$(document).ready(function() {-->
+                            <!--// create MultiSelect from select HTML element-->
+                            <!--var required = $("#multiselect-box").kendoMultiSelect().data("kendoMultiSelect");-->
+                        <!--});-->
+                    <!--</script>-->
+        </div>
+        <div class="mdl-cell mdl-cell--12-col">
+          <h3 class="form-section-title"><span class="form-section-number">1.8</span> Sectors</h3>
+          <div  class="form-section-padding"> <span class="form-comment"><i class="material-icons">report_problem</i> You may enter the approximate distribution of funds across the project sectors OR <a href="">click here</a> for equal distribution. </span>
+            <div id="grid"></div>
+                        <!--<script>-->
+                            <!--$(document).ready(function () {-->
+                                <!--var crudServiceBaseUrl = "http://demos.telerik.com/kendo-ui/service",-->
+                                        <!--dataSource = new kendo.data.DataSource({-->
+<!--//                            transport: {-->
+<!--//                                read: {-->
+<!--//                                    data: function() {-->
+<!--//                                        return {-->
+<!--//                                            sectorId: 1,-->
+<!--//                                            sector: "Unallocated",-->
+<!--//                                            subSector: "Unallocated",-->
+<!--//                                            percent: 15-->
+<!--//                                        }-->
+<!--//                                    }-->
+<!--//                                },-->
+<!--//                                update: {-->
+<!--//                                    data: function() {-->
+<!--//                                        return {-->
+<!--//                                            sector: "Unallocated",-->
+<!--//                                            subSector: "Unallocated",-->
+<!--//                                            percent: 15-->
+<!--//                                        }-->
+<!--//                                    }-->
+<!--//                                },-->
+<!--//                                destroy: {-->
+<!--//                                    url: crudServiceBaseUrl + "/Products/Destroy",-->
+<!--//                                    dataType: "jsonp"-->
+<!--//                                },-->
+<!--//                                create: {-->
+<!--//                                    url: crudServiceBaseUrl + "/Products/Create",-->
+<!--//                                    dataType: "jsonp"-->
+<!--//                                },-->
+<!--//                                parameterMap: function(options, operation) {-->
+<!--//                                    if (operation !== "read" && options.models) {-->
+<!--//                                        return {models: kendo.stringify(options.models)};-->
+<!--//                                    }-->
+<!--//                                }-->
+<!--//                            },-->
+                                            <!--data: [-->
+                                                <!--{ sectorId: 1, sector: "Sector 1", subSector: "Subsector 1", percent: 15 },-->
+                                                <!--{ sectorId: 1, sector: "Sector 1", subSector: "Subsector 12", percent: 18 },-->
+                                                <!--{ sectorId: 2, sector: "Sector 2", subSector: "Subsector 2", percent: 5 },-->
+                                                <!--{ sectorId: 3, sector: "Sector 3", subSector: "Subsector 3", percent: 7.8 },-->
+                                                <!--{ sectorId: 4, sector: "Sector 4", subSector: "Subsector 4", percent: 12 },-->
+                                                <!--{ sectorId: 4, sector: "Sector 4", subSector: "Subsector 4", percent: 12 },-->
+                                                <!--{ sectorId: 4, sector: "Sector 4", subSector: "Subsector 4", percent: 12 },-->
+                                                <!--{ sectorId: 4, sector: "Sector 4", subSector: "Subsector 4", percent: 12},-->
+                                                <!--{ sectorId: 4, sector: "Sector 4", subSector: "Subsector 4", percent: 12 },-->
+                                                <!--{ sectorId: 4, sector: "Sector 4", subSector: "Subsector 4", percent: 12 },-->
+                                                <!--{ sectorId: 1, sector: "Sector 1", subSector: "Subsector 1", percent: 15 },-->
+                                                <!--{ sectorId: 1, sector: "Sector 1", subSector: "Subsector 12", percent: 18 },-->
+                                                <!--{ sectorId: 2, sector: "Sector 2", subSector: "Subsector 2", percent: 5 },-->
+                                                <!--{ sectorId: 3, sector: "Sector 3", subSector: "Subsector 3", percent: 7.8 },-->
+                                                <!--{ sectorId: 4, sector: "Sector 4", subSector: "Subsector 4", percent: 12 },-->
+                                                <!--{ sectorId: 4, sector: "Sector 4", subSector: "Subsector 4", percent: 12 },-->
+                                                <!--{ sectorId: 4, sector: "Sector 4", subSector: "Subsector 4", percent: 12 }-->
+                                            <!--],-->
+
+                                            <!--batch: true,-->
+                                            <!--pageSize: 20,-->
+                                            <!--schema: {-->
+                                                <!--model: {-->
+                                                    <!--id: "sectorId",-->
+                                                    <!--fields: {-->
+                                                        <!--sectorId: { editable: false, nullable: true },-->
+                                                        <!--sector: { validation: { required: true } },-->
+                                                        <!--subSector: { validation: { required: true} },-->
+                                                        <!--percent: { type: "number" }-->
+                                                    <!--}-->
+                                                <!--}-->
+                                            <!--},-->
+
+<!--//                            aggregate: [ { field: "percent", aggregate: "sum" }],-->
+                                        <!--});-->
+
+<!--//                    dataSource.add({-->
+<!--//                     sectorId: 1000, sector: "Unallocated", subSector: "Unallocated", percent: 34-->
+<!--//                    });-->
+
+                                <!--$("#grid").kendoGrid({-->
+                                    <!--dataSource: dataSource,-->
+                                    <!--pageable: true,-->
+                                    <!--sortable: true,-->
+                                    <!--height: 550,-->
+                                    <!--toolbar: ["create"],-->
+                                    <!--columns: [-->
+                                        <!--{ field: "sector", title: "Sector", footerTemplate: "Total", format: "{0:c}", width: "auto" },-->
+                                        <!--{ field: "subSector", title:"Sub-sector", width: "120px" },-->
+                                        <!--{ field: "percent", title:"Percent", footerTemplate: "100", width: "120px" },-->
+                                        <!--{ command: ["edit", "destroy"], title: "&nbsp;", width: "90px" }],-->
+                                    <!--editable: "inline"-->
+                                <!--});-->
+                            <!--});-->
+                        <!--</script>-->
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col">
+          <h3 class="form-section-title"><span class="form-section-number">1.9</span> Geographic Locations</h3>
+        </div>
+            </div>
+        </div>
+    </main>
+</div>

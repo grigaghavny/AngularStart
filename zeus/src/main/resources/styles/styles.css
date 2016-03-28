@@ -1,0 +1,644 @@
+/* =general form styles
+    -------------------------------------------------------------- */
+
+html,
+body {
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.form-align-right {
+	text-align: right !important;
+}
+
+.form-align-left {
+	text-align: left !important;
+}
+
+.form-avatar {
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+}
+
+.form-drawer {
+	border: none;
+}
+
+/* =iOS Safari specific workaround
+    -------------------------------------------------------------- */
+.form-drawer .mdl-menu__container {
+	z-index: -1;
+}
+
+.form-drawer .form-navigation {
+	z-index: -2;
+}
+
+/* =END iOS Safari specific workaround
+    -------------------------------------------------------------- */
+
+.form-drawer-header {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 16px;
+}
+
+.form-avatar-dropdown {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+
+.form-navigation {
+	flex-grow: 1;
+}
+
+.form-content {
+	max-width: 1080px;
+}
+
+.form-max-width-full {
+	max-width: 100%;
+}
+
+.form-duration-days {
+	width: 50px;
+	margin-left: 10px;
+}
+
+.form-duration-months {
+	width: 50px;
+}
+
+.form-button-sec-rmargin {
+	margin-right: 13px;
+}
+
+.form-button-prim-rmargin {
+	margin-right: 7px;
+}
+
+.form-required {
+	background: #fbf9de !important;
+}
+
+h3.form-section-title {
+	background: #D6D6D6;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 28px;
+	margin: 24px 0 10px 0;
+}
+
+.form-section-number {
+	background: #4051b5;
+	color: #fff;
+	padding: 5px;
+	font-weight: normal;
+}
+
+.form-asterix {
+	color: #dd0101;
+	font-size: 12px;
+}
+
+.form-section-padding {
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.form-comment {
+	background: #fcf6df;
+	border: 1px solid #ebccd1;
+	border-radius: 2px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding: 5px;
+	display: block;
+	color: #ce9703;
+	line-height: 24px;
+	font-size: 13px;
+}
+
+.form-error-msg {
+	color: #BF0000;
+	margin-top: 2px;
+}
+
+.form-error-field {
+	border-radius: 2px;
+	border:#BF0000 1px solid;
+}
+
+.form-header-validations .form-error-msg {
+	padding: 5px 0;
+	background:#b94a48;
+	color:#fff;
+	border:#b94a48 1px solid;
+}
+
+.form-error-label {
+	color: #BF0000;
+}
+
+.form-table-total {
+	background: #daeace !important;
+	color: #e7e6e6;
+	font-weight: bold;
+	vertical-align: middle;
+	padding: 8px;
+	border: none !important;
+	border-top: #b1c99f 1px solid !important;
+	border-bottom: #b1c99f 1px solid !important;
+}
+
+/* =general form styles
+    -------------------------------------------------------------- */
+
+/* =overwrite some Kendo UI's styles
+   -------------------------------------------------------------- */
+
+#grid div.k-header {
+	background: #fff;
+	padding-right:0;
+	padding-left:0;
+}
+
+.k-header .k-grid-add {
+	background-color: #6FAC28 !important;
+	border-color: rgb(139,195,74) !important;
+	color: #fff !important;
+	float:right;
+	margin-right:0;
+}
+
+.k-widget.k-tooltip-validation {
+	border-color: #FFCBCB;
+	background-color: #FFCBCB;
+	color: #CD0000;
+	padding: 5px 8px;
+}
+
+.k-tooltip-validation .k-callout-n {
+	border-bottom-color: #FFCBCB;
+}
+
+.k-header .k-grid-add .k-add {
+	background-position: -32px -64px !important;
+}
+
+.k-header .k-grid-add:hover {
+	background-color: rgb(124, 177, 63) !important;
+}
+
+.k-grid-header,
+.k-grid-footer {
+	padding: 0 !important;
+}
+
+.k-grid-content {
+	overflow-y: visible;
+}
+
+.k-textbox,
+.k-textbox:hover,
+.k-textbox:focus {
+	border-color: #C5C5C5;
+}
+
+.k-calendar td.k-state-selected {
+	background-color: #6FAC28;
+	border:0;
+	box-shadow:none !important;
+}
+
+.k-calendar td.k-state-selected:hover {
+	background-color: rgb(124, 177, 63);
+}
+
+.k-textbox > input,
+.k-autocomplete .k-input,
+.k-dropdown-wrap .k-input,
+.k-autocomplete.k-state-focused .k-input,
+.k-dropdown-wrap.k-state-focused .k-input,
+.k-picker-wrap.k-state-focused .k-input,
+.k-numeric-wrap.k-state-focused .k-input {
+	border-color: #C5C5C5;
+}
+
+.k-autocomplete.k-state-default,
+.k-picker-wrap.k-state-default,
+.k-numeric-wrap.k-state-default,
+.k-dropdown-wrap.k-state-default {
+	border-color: #C5C5C5;
+}
+
+.k-state-default > .k-select {
+	border-color: #C5C5C5;
+}
+
+.k-picker-wrap.k-state-default > .k-select {
+	border-color: #C5C5C5;
+}
+.k-link:not(.k-state-disabled):hover>.k-i-calendar, .k-state-hover>.k-i-calendar, .k-state-hover>*>.k-i-calendar, .k-button:not(.k-state-disabled):hover .k-i-calendar, .k-textbox:hover .k-i-calendar, .k-button:active .k-i-calendar {
+	background-position: -32px -176px;
+}
+.k-link:not(.k-state-disabled):hover>.k-i-arrow-s, .k-state-hover>.k-i-arrow-s, .k-state-hover>*>.k-i-arrow-s, .k-button:not(.k-state-disabled):hover .k-i-arrow-s, .k-textbox:hover .k-i-arrow-s, .k-button:active .k-i-arrow-s {
+	background-position: 0 -32px;
+}
+
+.k-multiselect .k-state-hover .k-delete {
+	background-position: -160px -80px !important;
+}
+
+.k-dropdown .k-state-default {
+	border-color: #e6e6e6;
+}
+
+.k-dropdown .k-input {
+	background: #fff;
+}
+
+.k-dropdown-wrap .k-select {
+	border-style: solid;
+	border-width: 0 0 0 1px;
+}
+.k-link:not(.k-state-disabled):hover>.k-i-close, .k-link:not(.k-state-disabled):hover>.k-delete, .k-link:not(.k-state-disabled):hover>.k-group-delete, .k-state-hover>.k-i-close, .k-state-hover>.k-delete, .k-state-hover>.k-group-delete, .k-state-hover>*>.k-i-close, .k-state-hover>*>.k-delete, .k-state-hover>*>.k-group-delete, .k-button:not(.k-state-disabled):hover .k-i-close, .k-button:not(.k-state-disabled):hover .k-delete, .k-button:not(.k-state-disabled):hover .k-group-delete, .k-textbox:hover .k-i-close, .k-textbox:hover .k-delete, .k-textbox:hover .k-group-delete, .k-button:active .k-i-close, .k-button:active .k-delete, .k-button:active .k-group-delete {
+	background-position: -32px -16px;
+}
+.k-link:not(.k-state-disabled):hover>.k-i-pencil, .k-link:not(.k-state-disabled):hover>.k-edit, .k-state-hover>.k-i-pencil, .k-state-hover>.k-edit, .k-state-hover>*>.k-i-pencil, .k-state-hover>*>.k-edit, .k-button:not(.k-state-disabled):hover .k-i-pencil, .k-button:not(.k-state-disabled):hover .k-edit, .k-textbox:hover .k-i-pencil, .k-textbox:hover .k-edit, .k-button:active .k-i-pencil, .k-button:active .k-edit {
+	background-position: -32px 0px;
+}
+.k-link:not(.k-state-disabled):hover>.k-i-seek-e, .k-state-hover>.k-i-seek-e, .k-state-hover>*>.k-i-seek-e, .k-button:not(.k-state-disabled):hover .k-i-seek-e, .k-textbox:hover .k-i-seek-e, .k-button:active .k-i-seek-e {
+	background-position: 0 -80px;
+}
+.k-link:not(.k-state-disabled):hover>.k-i-arrow-e, .k-state-hover>.k-i-arrow-e, .k-state-hover>*>.k-i-arrow-e, .k-button:not(.k-state-disabled):hover .k-i-arrow-e, .k-textbox:hover .k-i-arrow-e, .k-button:active .k-i-arrow-e {
+	background-position: 0 -16px;
+}
+.k-link:not(.k-state-disabled):hover>.k-i-arrow-w, .k-state-hover>.k-i-arrow-w, .k-state-hover>*>.k-i-arrow-w, .k-button:not(.k-state-disabled):hover .k-i-arrow-w, .k-textbox:hover .k-i-arrow-w, .k-button:active .k-i-arrow-w {
+	background-position: 0 -48px;
+}
+.k-link:not(.k-state-disabled):hover>.k-i-seek-w, .k-state-hover>.k-i-seek-w, .k-state-hover>*>.k-i-seek-w, .k-button:not(.k-state-disabled):hover .k-i-seek-w, .k-textbox:hover .k-i-seek-w, .k-button:active .k-i-seek-w {
+	background-position: 0 -112px;
+}
+
+.k-i-plus,
+.k-add {
+	background-position: -48px -64px;
+}
+
+.k-grid-edit,
+.k-grid-delete,
+.k-grid-update,
+.k-grid-cancel {
+	width: 30px;
+	overflow: hidden;
+	height: 27px;
+	min-width: auto !important;
+	background-color:transparent;
+	border-color:transparent;
+	box-shadow:none;
+	border-radius:50%;
+}
+
+.k-panelbar-expand,
+.k-panelbar-collapse {
+	position: static;
+	margin-top: -2px;
+	margin-left: 5px;
+}
+
+.k-grid-edit:hover,
+.k-grid-delete:hover {
+	border-radius:50%;
+}
+
+.k-grid {
+	border:0;
+}
+
+.k-grid-content {
+	border:#e6e6e6 1px solid;
+	box-sizing:border-box;
+}
+
+.k-grid-update {
+	background: rgb(139,195,74) !important;
+	border-color: rgb(139,195,74) !important;
+}
+
+.k-grid-update:hover {
+	background: rgb(124, 177, 63) !important;
+	border-color: rgb(139,195,74) !important;
+}
+
+.k-grid-update:hover .k-icon.k-update {
+	background-position: -32px -32px;
+}
+
+.k-grid-cancel {
+	background: #FFCBCB !important;
+	border-color: #FFCBCB !important;
+}
+
+.k-grid-cancel:hover {
+	background: #ECAEAE !important;
+;
+	border-color: #EFBCBC !important;
+;
+}
+
+.k-grid-cancel:hover .k-icon.k-cancel {
+	background-position: -32px -48px;
+}
+
+.k-icon.k-edit,
+.k-icon.k-delete,
+.k-icon.k-cancel,
+.k-icon.k-update {
+	margin: 0;
+}
+
+.form-header-validations .k-link.k-header {
+	background: #b94a48 !important;
+}
+
+.form-header-validations .k-link {
+	color:#444444;
+}
+
+.form-header-validations .k-header {
+	border:0 !important;
+}
+
+.form-header-validations .k-warning {
+	background-position: -160px -240px;
+}
+
+.form-header-validations .k-i-arrow-s {
+	background-position: 0 -32px;
+}
+
+.form-header-validations .k-i-arrow-n {
+	background-position: 0 0 !important;
+}
+.k-grid-content tr:nth-child(odd) {
+	background: #f9fafc;
+}
+
+.k-grid-content td {
+	border:1px solid #f2f2f2;
+}
+
+.k-grid-content table,
+.k-grid-content tr,
+.k-grid-content td {
+	border-collapse:collapse;
+}
+
+.k-grid tr:hover {
+	background-color: #fbf9de !important;
+}
+
+.k-grid th {
+	background: #4c5a5d !important;
+	color: #e7e6e6;
+	font-weight: bold;
+	vertical-align: middle;
+	padding: 8px;
+	border-left: 1px solid #7f7f7f !important;
+	border-right: 1px solid #3d3d3d !important;
+}
+
+.k-grid-footer {
+	border:none !important;
+}
+
+.k-grid th .k-link {
+	color: #e7e6e6 !important;
+}
+
+.k-icon.k-add {
+	background:none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-12px, -12px);
+	-ms-transform: translate(-12px, -12px);
+	transform: translate(-12px, -12px);
+	line-height: 24px;
+	width: 24px;
+	content:"add";
+}
+
+/* =End overwrite some Kendo UI's styles
+    -------------------------------------------------------------- */
+
+
+/* =overwrite some MDL styles
+   -------------------------------------------------------------- */
+
+.form-layout .form-header .mdl-textfield {
+	padding: 0px;
+	margin-top: 41px;
+}
+
+.form-layout .form-header .mdl-textfield .mdl-textfield__expandable-holder {
+	bottom: 19px;
+}
+
+.form-layout .mdl-layout__header .mdl-layout__drawer-button {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.mdl-layout__drawer .avatar {
+	margin-bottom: 16px;
+}
+
+.form-drawer .mdl-menu .mdl-menu__item {
+	display: flex;
+	align-items: center;
+}
+
+.form-layout .form-navigation .mdl-navigation__link {
+	display: flex !important;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.56);
+	font-weight: 400;
+}
+
+.form-layout .form-navigation .mdl-navigation__link:hover {
+	background-color: #4051b5;
+	color: #fff;
+}
+
+.form-navigation .mdl-navigation__link .material-icons {
+	font-size: 24px;
+	color: rgba(255, 255, 255, 0.56);
+	margin-right: 32px;
+}
+
+.mdl-button--raised.mdl-button--colored {
+	background: #6FAC28;
+	color: #fff;
+}
+
+.mdl-layout-title {
+	margin: 19px 15px 0 18px;
+}
+
+.mdl-layout__drawer-button {
+	top: 42px;
+}
+
+.mdl-layout__header-row {
+	padding: 0 20px;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation-selected,
+.mdl-layout__drawer .mdl-navigation .mdl-navigation-selected.mdl-navigation__link:hover {
+	background-color: #4051b5;
+	color: #fff;
+}
+
+.form-layout .form-navigation .mdl-navigation__link:hover {
+	background-color: #485861;
+}
+
+.mdl-label {
+	font-weight: bold;
+}
+
+.mdl-navigation__link {
+	font-size: 15px;
+}
+
+.mdl-textbox {
+	height: 100px !important;
+}
+
+.form-comment .material-icons {
+	float: left;
+	margin-right: 3px;
+}
+
+.mdl-button:hover {
+	background-color: rgba(158, 158, 158, .3);
+}
+
+/* =End overwrite some MDL styles
+   -------------------------------------------------------------- */
+
+/* =media queries
+   -------------------------------------------------------------- */
+
+@media screen and (min-width:1025px) {
+	h1.mdl-layout-title {
+		max-width: 340px;
+	}
+
+	.mdl-layout-title {
+		margin: 19px 15px -39px 14px;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.mdl-button {
+		min-width: 45px;
+		padding: 0px 8px;
+		font-size: 11px;
+	}
+
+	.mdl-button--icon {
+		min-width: 32px;
+		width: 32px;
+	}
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+	.k-grid-content table,
+	.k-grid-content thead,
+	.k-grid-content tbody,
+	.k-grid-content th,
+	.k-grid-content tr,
+	.k-grid-content td {
+		display: block;
+	}
+
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.k-grid-content tr {
+		border-bottom: 1px solid #e6e6e6;
+	}
+
+	.k-grid-content td {
+		position: relative;
+		padding-left: 50% !important;
+		text-align: left;
+	}
+
+	.k-grid-content td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: right;
+	}
+
+	.k-grid-content td:nth-of-type(1):before {
+		content: "Sector:";
+	}
+
+	.k-grid-content td {
+		position: relative;
+		padding-left: 50% !important;
+		text-align: left !important;
+	}
+	.k-grid-content td:nth-of-type(2):before {
+		content: "Sub-sector:";
+	}
+
+	.k-grid-content td:nth-of-type(3):before {
+		content: "Percent:";
+	}
+
+	.k-grid.k-widget, .k-grid-content {
+		height: initial !important;
+	}
+	.k-grid-content td:nth-of-type(4) { display: none; }
+
+	.k-grid-content td:nth-of-type(1):after {
+		content: "...";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 100%;
+		cursor: pointer;
+		text-align: center;
+		font-size: 28px;
+		transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	}
+
+	.k-widget.k-tooltip-validation {
+		position: inherit !important;
+	}
+}
+
+/* =End media queries
+   -------------------------------------------------------------- */
